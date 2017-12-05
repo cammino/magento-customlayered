@@ -12,6 +12,14 @@ git submodule add https://github.com/cammino/magento-customlayered.git app/code/
 cp app/code/community/Cammino/Customlayered/Cammino_Customlayered.xml app/etc/modules/
 
 cp app/code/community/Cammino/Customlayered/app/template/custom-layered.phtml app/design/frontend/[THEME]/template/catalog/category/
+
+cp app/code/community/Cammino/Customlayered/customlayered.js skin/frontend/[THEME]/js/
+```
+
+**you need to reference the javascript file that you add above in your theme's .xml file**
+**file: app/design/frontend/[THEME]/layout/page.xml**
+```xml
+<action method="addItem"><type>skin_js</type><name>js/customlayered.js</name></action>
 ```
 
 **and the xml config depends where your template will be rendered, example in toolbar.phtml:**
