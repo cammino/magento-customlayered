@@ -30,6 +30,11 @@ cp app/code/community/Cammino/Customlayered/customlayered.js skin/frontend/[THEM
 </block>
 ```
 
+**To show/hide layered navigation use the classes in the corresponding CHILD element of .customlayered div:**
+***.show-event*** elemento usado para abrir o box de navegação
+***.close-event*** elemento usado para fechar o box de navegação
+***.show-close-event*** elemento usado para abrir e fechar o box de navegação
+
 **Finally manage the exibition of the layered container with class .active in css**
 ```css
 .customlayered .customlayered-box{
