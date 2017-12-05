@@ -29,3 +29,24 @@ cp app/code/community/Cammino/Customlayered/customlayered.js skin/frontend/[THEM
     <block type="customlayered/layer_view" name="customlayered" as="customlayered" template="catalog/category/custom-layered.phtml" />
 </block>
 ```
+
+**Finally manage the exibition of the layered container with class .active in css**
+```css
+.customlayered .customlayered-box{
+    display: none;
+}
+
+.customlayered.active .customlayered-box{
+    display: block;
+}
+```
+
+# Additional
+You can extend the funcionality using the methods below
+```javascript
+    // Exibe o bloco de filtros customizados
+    showCustomLayered();
+    
+    // Esconde o bloco de filtros customizados
+    closeCustomLayered();
+```
