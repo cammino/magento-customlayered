@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Cammino_Customlayered>
+			<version>0.0.1</version>
+		</Cammino_Customlayered>
+	</modules>
+	<global>
+		<blocks>
+			<customlayered>
+				<class>Cammino_Customlayered_Block</class>
+			</customlayered>
+		</blocks>
+		<helpers>
+            <customlayered>
+                <class>Cammino_Customlayered_Helper</class>
+            </customlayered>
+        </helpers>
+	</global>
+</config>
